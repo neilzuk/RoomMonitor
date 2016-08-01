@@ -3,6 +3,8 @@ Particle Electron app that reads data from a BMP085 and a DHT11 sensor before se
 
 I created this simple Room Monitor program to try out Particle's new product the Electron. The code is fairly basic just enough to have a working application to demo the Electron.
 
+Two libraries are used `PietteTech_DHT.h` and `Adafruit_BMP085.h` to help communicate with the sensors.
+
 ## Electron & Sensor pins
 D0 -> BMP085 SDA  
 D1 -> BMP085 SCL  
