@@ -9,9 +9,9 @@
 */
 
 Adafruit_BMP085 bmp;
-#define DHTTYPE  DHT11       // Sensor type DHT11/21/22/AM2301/AM2302
+#define DHTTYPE  DHT11        // Sensor type DHT11/21/22/AM2301/AM2302
 #define DHTPIN   D2           // Digital pin for communications
-void dht_wrapper(); // must be declared before the lib initialization
+void dht_wrapper(); 
 PietteTech_DHT DHT(DHTPIN, DHTTYPE, dht_wrapper);
 
 String api_key = ""; // ThingSpeak Write API Key.
@@ -33,7 +33,6 @@ int sleepDuration = 900; // Sleep for 15 minutes
 
 void InitializeBMP085(){
 	if (!bmp.begin()) {
-		//Serial.println("Could not find a valid BMP085 sensor, check wiring!");
 		while (1) {}
 	}
 }
