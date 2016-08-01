@@ -14,7 +14,7 @@ Adafruit_BMP085 bmp;
 void dht_wrapper(); // must be declared before the lib initialization
 PietteTech_DHT DHT(DHTPIN, DHTTYPE, dht_wrapper);
 
-String api_key = "UO2O1XN9DKC9INK9"; // ThingSpeak Write API Key.
+String api_key = ""; // ThingSpeak Write API Key.
 String field1 = ""; // BMP085 Temp *c
 String field2 = ""; // DHT11 Temp *c
 String field3 = ""; // Altitude m
@@ -23,8 +23,8 @@ String field5 = ""; // Pressure pa
 String field6 = ""; // Humidity %
 String field7 = ""; // Dew Point *c
 String field8 = ""; // Dew Point Slow *c
-String lat = "53.2819";
-String lon = "2.8962";
+String lat = "51.499981";
+String lon = "-0.142822";
 String el = "19";
 String status = "";
 int sleepDuration = 900; // Sleep for 15 minutes
